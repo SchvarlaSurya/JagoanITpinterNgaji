@@ -20,14 +20,28 @@ export default function Home() {
               </div>
               <img src="src/assets/BetaBet.svg" alt="BetaBet" className="w-40"/>
             </motion.div>
-
-            <div className="hidden lg:flex items-center gap-10 text-gray-700 font-semibold">
-              {['Home', 'Kursus', 'Mentor', 'Testimoni', 'Kontak'].map((item) => (
-                <a key={item} href="#" className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-blue-700 after:transition-transform hover:after:scale-x-100 hover:text-blue-700 transition">
-                  {item}
-                </a>
-              ))}
-            </div>
+             <div className="hidden lg:flex items-center gap-10 text-gray-700 font-semibold   ">
+              <a
+                href="#hero"
+                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-blue-700 after:transition-transform hover:after:scale-x-100 hover:text-blue-700 transition"
+              >Home</a>
+              <a
+                href="#kursus"
+                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-blue-700 after:transition-transform hover:after:scale-x-100 hover:text-blue-700 transition"
+              >Kursus </a>
+              <a
+                href="#mentor"
+                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-blue-700 after:transition-transform hover:after:scale-x-100 hover:text-blue-700 transition"
+              >Mentor</a>
+              <a
+                href="#testimoni"
+                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-blue-700 after:transition-transform hover:after:scale-x-100 hover:text-blue-700 transition"
+              >Testimoni</a>
+              <a
+                href="#kontak"
+                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-blue-700 after:transition-transform hover:after:scale-x-100 hover:text-blue-700 transition"
+              >Kontak </a>
+                </div>
 
             <div className="hidden lg:flex items-center gap-4">
               <Link to='/signin' className="px-6 py-3 text-blue-700 font-bold rounded-full border-2 border-blue-200 hover:bg-blue-50 transition bg-white">
@@ -45,7 +59,7 @@ export default function Home() {
         </nav>
 
         {/* Hero */}
-        <section className="pt-32 pb-20 px-6 lg:px-16">
+        <section id='hero' className="pt-32 pb-20 px-6 lg:px-16">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="px-5 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-bold">
@@ -76,7 +90,7 @@ export default function Home() {
                 </button>
               </motion.div>
 
-              <div className="mt-10 flex flex-wrap gap-12">
+              <div className="mt-10 flex row gap-12">
                 {[
                   { number: "100K+", label: "Siswa Aktif" },
                   { number: "10K+", label: "Program Pembelajaran" },
@@ -98,7 +112,7 @@ export default function Home() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="px-6 lg:px-16 py-24 bg-linear-to-b from-white to-blue-50">
+        <section id='' className="px-6 lg:px-16 py-24 bg-linear-to-b from-white to-blue-50">
           <div className="max-w-6x1 mx-auto text-center">
             <h2 className="text-4xl font-black text-gray-900">Kenapa Harus BetaBet?</h2>
             <p className="mt-6 text-md  text-gray-600 max-w-4xl mx-auto">
@@ -128,7 +142,7 @@ export default function Home() {
         </section>
 
         {/* SECTION: PENGEN BISA JAGO SPEAKING BAHASA INGGRIS, TAPI... */}
-        <section className="py-20 lg:py-32 bg-linear-to-b from-black- to-white text-black overflow-hidden">
+        <section id='kursus' className="py-20 lg:py-32 bg-linear-to-b from-black- to-white text-black overflow-hidden">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
             {/* Judul Besar */}
@@ -226,7 +240,7 @@ export default function Home() {
         </section>
 
         {/* Testimoni */}
-        <section className="px-6 lg:px-16 py-24">
+        <section id='testimoni' className="px-6 lg:px-16 py-24">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-4xl font-black text-gray-900">Apa Kata Alumni Kami?</h2>
             <div className="mt-16 grid md:grid-cols-3 gap-8">
@@ -256,7 +270,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative px-6 py-24 lg:py-32 overflow-hidden bg-linear-to-br from-blue-600 via-cyan-500 to-blue-700">
+        <section id='mentor' className="relative px-6 py-24 lg:py-32 overflow-hidden bg-linear-to-br from-blue-600 via-cyan-500 to-blue-700">
           <div className="absolute inset-0 bg-black/10" />
           
           <div className="relative max-w-7xl mx-auto text-center">

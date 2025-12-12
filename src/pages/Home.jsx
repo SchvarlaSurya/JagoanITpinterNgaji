@@ -47,9 +47,9 @@ export default function Home() {
               <Link to='/signin' className="px-6 py-3 text-blue-700 font-bold rounded-full border-2 border-blue-200 hover:bg-blue-50 transition bg-white">
                 Masuk
               </Link>
-              <button className="px-8 py-3 bg-blue-700 text-white font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition flex items-center gap-2">
+              <Link to="/signup" className="px-8 py-3 bg-blue-700 text-white font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition flex items-center gap-2">
                 Get Started <ArrowRight className="w-5 h-5" />
-              </button>
+              </Link>
             </div>
 
             <button onClick={() => setMobileMenu(!mobileMenu)} className="lg:hidden">

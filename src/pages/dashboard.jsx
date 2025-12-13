@@ -4,10 +4,44 @@ import { Menu, X, ArrowRight, Star, Users, BookOpen, Award, Clock, Globe, Trendi
 import { motion } from 'motion/react'
 
 export default function DashboardUI() {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  function LoginModal({ onClose }) {
+  return (
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center">
+      
+      {/* BACKDROP */}
+      <div
+        className="absolute inset-0 bg-black/50 backdrop-blur-md"
+      />
+
+      {/* MODAL */}
+      <div className="relative bg-white w-full max-w-md rounded-xl p-6 shadow-2xl">
+        <h2 className="text-xl font-bold mb-4">Login Required</h2>
+
+        <input
+          placeholder="Email"
+          className="w-full mb-3 px-4 py-2 border rounded"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          className="w-full mb-4 px-4 py-2 border rounded"
+        />
+
+        <button
+          className="w-full bg-blue-600 text-white py-2 rounded"
+        >
+          Sign In
+        </button>
+      </div>
+    </div>
+  );
+}
   return (
     <div className="min-h-screen w-full bg-gray-200 flex">
+
       {/* SIDEBAR */}
-      <aside className="w-64 bg-white shadow-md p-6 flex flex-col justify-between">
+      <aside className="w-64 bg-white border-r p-6 flex flex-col justify-between">
         <div>
           <img src="src/assets/BetaBet.svg" alt="BetaBet" className='w-25' />
 
@@ -41,7 +75,7 @@ export default function DashboardUI() {
               <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.208 4.83q.68.21 1.3.54l1.833-1.1a1 1 0 0 1 1.221.15l1.018 1.018a1 1 0 0 1 .15 1.221l-1.1 1.833q.33.62.54 1.3l2.073.519a1 1 0 0 1 .757.97v1.438a1 1 0 0 1-.757.97l-2.073.519q-.21.68-.54 1.3l1.1 1.833a1 1 0 0 1-.15 1.221l-1.018 1.018a1 1 0 0 1-1.221.15l-1.833-1.1q-.62.33-1.3.54l-.519 2.073a1 1 0 0 1-.97.757h-1.438a1 1 0 0 1-.97-.757l-.519-2.073a7.5 7.5 0 0 1-1.3-.54l-1.833 1.1a1 1 0 0 1-1.221-.15L4.42 18.562a1 1 0 0 1-.15-1.221l1.1-1.833a7.5 7.5 0 0 1-.54-1.3l-2.073-.519A1 1 0 0 1 2 12.72v-1.438a1 1 0 0 1 .757-.97l2.073-.519q.21-.68.54-1.3L4.27 6.66a1 1 0 0 1 .15-1.221L5.438 4.42a1 1 0 0 1 1.221-.15l1.833 1.1q.62-.33 1.3-.54l.519-2.073A1 1 0 0 1 11.28 2h1.438a1 1 0 0 1 .97.757zM12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8"/></svg></span>
                Settings
             </button>
-            <button className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-100 text-gray-700">
+            <button onClick={() => setIsLoggedIn(false)} className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-100 text-gray-700">
               <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12h-9.5m7.5 3l3-3l-3-3m-5-2V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5a2 2 0 0 0 2-2v-1"/></svg></span>
                Log Out
             </button>
@@ -125,7 +159,7 @@ export default function DashboardUI() {
 
         {/* PROGRESS SECTION */}
         <div className="bg-white rounded-lg p-6 shadow-md">
-          <h2 className="font-semibold mb-4">PROGRES</h2>
+          <h2 className="font-semibold mb-4 text-black">PROGRES</h2>
 
           <div className="flex flex-col gap-4">
             {[1, 2, 3].map((i) => (
@@ -142,7 +176,7 @@ export default function DashboardUI() {
             ))}
           </div>
         </div>
-      </main>
+      </main> 
     </div>
   );
 }

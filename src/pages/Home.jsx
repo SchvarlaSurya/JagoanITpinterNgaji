@@ -63,7 +63,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="px-5 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-bold">
-                Transform Your Future
+                Belajar Tanpa Ribet !
               </motion.span>
 
               <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
@@ -76,7 +76,7 @@ export default function Home() {
 
               <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
                 className="mt-8 text-xl text-gray-700 leading-relaxed">
-                Belajar Skill Relevan Industri Bersama Mentor Berpengalaman Dan Sistem Pembelajaran Modern Berbasis Teknologi. 
+                Belajar Skill Relevan Industri Bersama BetaBet, Suasana Berpengala  man Dan Sistem Pembelajaran Modern Berbasis Teknologi. 
                 Bukan Sekadar Teori — Tapi Kemampuan Nyata Untuk Masa Depan Yang Kompetitif.
               </motion.p>
 
@@ -90,7 +90,7 @@ export default function Home() {
                 </button>
               </motion.div>
 
-              <div className="mt-10 flex row gap-12">
+              <div className="mt-9 flex row gap-10 text-center">
                 {[
                   { number: "100K+", label: "Siswa Aktif" },
                   { number: "10K+", label: "Program Pembelajaran" },
@@ -121,12 +121,12 @@ export default function Home() {
 
             <div className="mt-20 grid md:grid-cols-3 gap-10">
               {[
-                { icon: BookOpen, title: "Mentor dari Big Tech & Startup", desc: "Belajar langsung dari praktisi Gojek, Tokopedia, Traveloka, dll" },
+                { icon: BookOpen, title: "Pembelajaran dari Big Tech & Startup", desc: "Belajar langsung dari praktisi Website" },
                 { icon: Laptop, title: "100% Praktik + Project Real", desc: "Setiap materi langsung bikin portfolio siap interview" },
                 { icon: Award, title: "Sertifikat + Job Guarantee*", desc: "Lulus = langsung dapet rekomendasi kerja (*syarat berlaku)" },
                 { icon: Clock, title: "Belajar Fleksibel 24/7", desc: "Kapan pun, di mana pun — sesuai ritme hidupmu" },
                 { icon: Users, title: "Komunitas 100K+ Member", desc: "Diskusi, networking, sampe kolplay bareng" },
-                { icon: Shield, title: "Garansi Uang Kembali", desc: "Gak puas dalam 14 hari? Full refund, no question asked" }
+                { icon: Shield, title: "Bebas Berkomunikasi", desc: "Gak puas? Kontak, no question asked" }
               ].map((item, i) => (
                 <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
                   className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-4 border border-gray-100 group">
@@ -152,7 +152,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="text-center text-4xl lg:text-3xl font-black mb-16 lg:mb-20"
             >
-              Pengen Bisa <span className="text-blue-700 hover:text-blue-100 transition">Jago Speaking</span> Bahasa Inggris,{" "}
+              Pengen Bisa <span className="text-blue-700 hover:text-blue-500 transition">Jago Ngoding</span> Banyak Bahasa,{" "}
               <span className="block">Tapi...</span>
             </motion.h2>
 
@@ -164,11 +164,11 @@ export default function Home() {
                 {/* Kiri: Daftar Masalah */}
                 <div className="space-y-6 w-full max-w-md">
                   {[
-                    "Pengen ngomong Inggris, tapi takut salah",
-                    "Grammar? Aduh, bikin pusing!",
-                    "Kosa kata minim, jadi bingung mau ngomong apa",
-                    "Ngomong di depan orang? Langsung ngeblank!",
-                    "Ngerti kalau orang ngomong, tapi gak bisa bales"
+                    "Pengen ngoding, tapi takut salah",
+                    "Bahasa coding? Aduh, bikin pusing!",
+                    "Syntax minim, jadi bingung mau nulis apa",
+                    "Bikin website? Langsung ngeblank!",
+                    "Ngerti pake Ai, tapi gak paham cara kerjanya"
                   ].map((text, i) => (
                     <motion.div
                       key={i}
@@ -188,10 +188,10 @@ export default function Home() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
                     className="relative mb-10">
-                    <div className='flex mt-65'>
+                    <div className='flex justify-center'>
                     <img 
                       src="src/assets/0230eee1cced79a881276b4be2fb0d30.jpg" 
-                      alt="Pengen jago speaking tapi..."
+                      alt="Pengen jago Ngoding tapi..."
                       className="w-80 lg:w-96 rounded-3xl shadow-2xl"
                     />
                     </div>
@@ -200,10 +200,10 @@ export default function Home() {
                 {/* Kanan: Foto Orang Stres + Daftar Masalah */}
                   <div className="space-y-6 w-full max-w-md">
                     {[
-                      "Nggak pede sama aksen sendiri, takut diketawain",
-                      "Bikin satu kalimat aja mikirnya lama",
-                      "Takut salah pengucapan, jadi malah diam",
-                      "Kalau disuruh presentasi, langsung panik!",
+                      "Nggak pede sama Website sendiri, takut diketawain",
+                      "Bikin satu baris aja mikirnya lama",
+                      "Takut salah penulisan, jadi malah diam",
+                      "Kalau disuruh bikin web, langsung panik!",
                       "Rasanya pengen bisa, tapi selalu ragu mulai"
                     ].map((text, i) => (
                       <motion.div
@@ -214,7 +214,7 @@ export default function Home() {
                         className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-5 border border-white/20 text-left ml-auto"
                       >
                         <div className="text-2xl px-8 py-3  text-white font-bold rounded-2x1 shadow-xl hover:shadow-2xl hover:scale-105 transition flex items-center gap-2">❌</div>
-                        <p className="text-lg lg:text-xl  px-8 py-3 font-bold rounded-2x1 shadow-xl hover:shadow-2xl hover:scale-105 flex items-center gap-2  hover:bg-blue-700 hover:text-white transition">{text}</p>
+                        <p className="text-lg lg:text-xl  px-8 py-3 font-medium rounded-2x1 shadow-xl hover:shadow-2xl hover:scale-105 flex items-center gap-2  hover:bg-blue-700 hover:text-white transition">{text}</p>
                       </motion.div>
                     ))}
                   </div>
@@ -270,7 +270,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id='mentor' className="relative px-6 py-24 lg:py-32 overflow-hidden bg-linear-to-br from-blue-600 via-cyan-500 to-blue-700">
+        <section id='mentor' className="relative px-6 py-24 lg:py-32 overflow-hidden bg-linear-to-br from-blue-600 to-blue-700">
           <div className="absolute inset-0 bg-black/10" />
           
           <div className="relative max-w-7xl mx-auto text-center">
@@ -289,7 +289,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
               className="relative max-w-2xl mx-auto mb-16 lg:mb-20 -mt-10"
             >
               <div className="rounded-3xl overflow-hidden shadow-3xl border-8 border-white/20">
@@ -305,7 +305,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.5 }}
+                transition={{ duration: 0.7, delay: 0.1 }}
                 className="bg-white/10 backdrop-blur-xl rounded-3xl p-10 lg:p-12 border border-white/20 shadow-2xl"
               >
                 <h3 className="text-4xl lg:text-3xl font-black text-white mb-8">
@@ -333,7 +333,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.7 }}
+                transition={{ duration: 0.7, delay: 0.1 }}
                 className="bg-white/10 backdrop-blur-xl rounded-3xl p-10 lg:p-12 border border-white/20 shadow-2xl"
               >
                 <h3 className="text-4xl lg:text-3 xl font-black text-white mb-8">
@@ -362,12 +362,12 @@ export default function Home() {
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.9 }}
+              transition={{ delay: 0.1 }}
               className="mt-16 flex flex-col sm:flex-row gap-6 justify-center"
             >
-              <button className="px-12 py-6 bg-yellow-400 text-black font-black text-2xl rounded-full shadow-2xl hover:scale-110 transition">
+              <Link to='/signin' className="px-12 py-6 bg-yellow-400 text-black font-black text-2xl rounded-full shadow-2xl hover:scale-110 transition">
                 Daftar Sekarang
-              </button>
+              </Link>
               <button className="px-12 py-6 bg-white/20 backdrop-blur-xl text-white font-bold text-xl rounded-full border-2 border-white hover:bg-white/30 transition">
                 Konsultasi Dulu
               </button>
@@ -385,12 +385,12 @@ export default function Home() {
                 <span className="text-yellow-300">Mulai Karier Impianmu Sekarang!</span>
               </h2>
               <p className="text-md mb-10 opacity-90">
-                7 Hari Akses Full GRATIS • Tanpa Kartu Kredit • Bisa Cancel Kapan Aja
+                Setiap Hari Akses Full GRATIS • Tanpa Kartu Kredit • Bisa Mulai Kapan Aja
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <button className="px-10 py-4 bg-white text-blue-700 font-black text-2xl rounded-full shadow-2xl hover:scale-90 transition">
-                  Mulai Gratis 7 Hari
-                </button>
+                <Link to='/signin' className="px-10 py-4 bg-white text-blue-700 font-black text-2xl rounded-full shadow-2xl hover:scale-90 transition">
+                  Mulai Belajar!
+                </Link>
                 <button className="px-10 py-3 border-2 border-white text-white font-bold text-2x1 rounded-full hover:bg-white/20 transition flex items-center justify-center gap-3">
                   <Headphones className="w-8 h-8" /> Chat Mentor Sekarang
                 </button>

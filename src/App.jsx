@@ -4,6 +4,8 @@ import Dashboard from "./pages/dashboard";
 import BetaBetLogin from "./pages/signin";
 import Mycourses from "./pages/Mycourses";
 import BetaBetSignup from "./pages/signup";
+import Assignment from "./pages/Assignment";
+import Setting from "./pages/Setting";
 
 
 function App() {
@@ -16,7 +18,8 @@ function App() {
     <Route path="/signin" element={<BetaBetLogin />} />
     <Route path="/signup" element={<BetaBetSignup />} />
     <Route path="/mycourses" element={<Mycourses />} />
-
+    <Route path="/assignment" element={<Assignment />} />
+    <Route path="/setting" element={<Setting />} />
       </Routes>
     </Router>
   );

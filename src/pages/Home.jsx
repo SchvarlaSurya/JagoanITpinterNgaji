@@ -37,10 +37,9 @@ export default function Home() {
                 href="#testimoni"
                 className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-blue-700 after:transition-transform hover:after:scale-x-100 hover:text-blue-700 transition"
               >Testimoni</a>
-              <a
-                href="#kontak"
-                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-blue-700 after:transition-transform hover:after:scale-x-100 hover:text-blue-700 transition"
-              >Kontak </a>
+
+              <Link to="https://wa.me/628121713977" className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-blue-700 after:transition-transform hover:after:scale-x-100 hover:text-blue-700 transition"
+              > Kontak </Link>
                 </div>
 
             <div className="hidden lg:flex items-center gap-4">
@@ -106,7 +105,7 @@ export default function Home() {
 
             <motion.div initial={{ opacity: 0, y: 80 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
               className="-mt-21 lg:-mt-70">
-              <img src="src/assets/image 1.jpg" alt="Happy Students" className="rounded-3xl shadow-2xl w-105 max-w-2xl mx-auto" />
+              <img src="src/assets/image 1.jpg" alt="Happy Students" className="rounded-3xl shadow-2xl w-full max-w-2xl mx-auto" />
             </motion.div>
           </div>
         </section>
@@ -190,8 +189,8 @@ export default function Home() {
                     className="relative mb-10">
                     <div className='flex justify-center'>
                     <img 
-                      src="src/assets/0230eee1cced79a881276b4be2fb0d30.jpg" 
-                      alt="Pengen jago speaking tapi..."
+                      src="src/assets/orgbingung.jpg" 
+                      alt="Pengen jago Ngoding tapi..."
                       className="w-80 lg:w-96 rounded-3xl shadow-2xl"
                     />
                     </div>
@@ -231,9 +230,11 @@ export default function Home() {
               <p className="text-2xl lg:text-4xl font-bold mb-8">
                 Gak usah panik, kami punya solusinya
               </p>
-              <button className="px-10 py-6 bg-linear-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-black text-2xl rounded-full shadow-2xl hover:scale-105 transition flex items-center gap-4 mx-auto">
+              <div className='flex justify-center items-center'>
+                <Link to="/dashboard" className="px-10 py-6 bg-linear-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-black text-2xl rounded-full shadow-2xl hover:scale-105 transition flex items-center gap-4 mx-auto">
                 Saya Mau Jago Ngoding!
-              </button>
+              </Link>
+              </div>
             </motion.div>
 
           </div>
@@ -365,10 +366,10 @@ export default function Home() {
               transition={{ delay: 0.1 }}
               className="mt-16 flex flex-col sm:flex-row gap-6 justify-center"
             >
-              <button className="px-12 py-6 bg-yellow-400 text-black font-black text-2xl rounded-full shadow-2xl hover:scale-110 transition">
+              <Link to='/signin' className="px-12 py-6 bg-yellow-400 text-black font-black text-2xl rounded-full shadow-2xl hover:scale-110 transition">
                 Daftar Sekarang
-              </button>
-              <Link to="" className="px-12 py-6 bg-white/20 backdrop-blur-xl text-white font-bold text-xl rounded-full border-2 border-white hover:bg-white/30 transition">
+              </Link>
+              <Link to="https://wa.me/628121713977" className="px-12 py-6 bg-white/20 backdrop-blur-xl text-white font-bold text-xl rounded-full border-2 border-white hover:bg-white/30 transition">
                 Konsultasi Dulu
               </Link>
             </motion.div>
@@ -388,10 +389,10 @@ export default function Home() {
                 Setiap Hari Akses Full GRATIS • Tanpa Kartu Kredit • Bisa Mulai Kapan Aja
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <button className="px-10 py-4 bg-white text-blue-700 font-black text-2xl rounded-full shadow-2xl hover:scale-90 transition">
-                  Mulai Gratis 7 Hari
-                </button>
-                <Link to={"/"} className="px-10 py-3 border-2 border-white text-white font-bold text-2x1 rounded-full hover:bg-white/20 transition flex items-center justify-center gap-3">
+                <Link to='/signin' className="px-10 py-4 bg-white text-blue-700 font-black text-2xl rounded-full shadow-2xl hover:scale-90 transition">
+                  Mulai Belajar!
+                </Link>
+                <Link to="https://wa.me/6281213173977" className="px-10 py-3 border-2 border-white text-white font-bold text-2x1 rounded-full hover:bg-white/20 transition flex items-center justify-center gap-3">
                   <Headphones className="w-8 h-8" /> Chat Mentor Sekarang
                 </Link>
               </div>

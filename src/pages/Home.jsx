@@ -106,7 +106,7 @@ export default function Home() {
 
             <motion.div initial={{ opacity: 0, y: 80 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
               className="-mt-21 lg:-mt-70">
-              <img src="src/assets/bismillah.jpg" alt="Happy Students" className="rounded-3xl shadow-2xl w-full max-w-2xl mx-auto" />
+              <img src="src/assets/image 1.jpg" alt="Happy Students" className="rounded-3xl shadow-2xl w-105 max-w-2xl mx-auto" />
             </motion.div>
           </div>
         </section>
@@ -190,7 +190,7 @@ export default function Home() {
                     className="relative mb-10">
                     <div className='flex mt-65'>
                     <img 
-                      src="src/assets/0230eee1cced79a881276b4be2fb0d30.jpg" 
+                      src="src/assets/orgbingung.jpg" 
                       alt="Pengen jago speaking tapi..."
                       className="w-80 lg:w-96 rounded-3xl shadow-2xl"
                     />
@@ -293,7 +293,7 @@ export default function Home() {
               className="relative max-w-2xl mx-auto mb-16 lg:mb-20 -mt-10"
             >
               <div className="rounded-3xl overflow-hidden shadow-3xl border-8 border-white/20">
-                <img src="src/assets/4d35f40de453901dfa94d86b9f763584.jpg"/>
+                <img src="src/assets/orangbljr.jpeg"/>
               </div>
               {/* Efek glass overlay biar makin premium */}
               <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent rounded-3xl" />
@@ -365,12 +365,12 @@ export default function Home() {
               transition={{ delay: 0.9 }}
               className="mt-16 flex flex-col sm:flex-row gap-6 justify-center"
             >
-              <button className="px-12 py-6 bg-yellow-400 text-black font-black text-2xl rounded-full shadow-2xl hover:scale-110 transition">
+              <Link to="/signin" className="px-12 py-6 bg-yellow-400 text-black font-black text-2xl rounded-full shadow-2xl hover:scale-110 transition">
                 Daftar Sekarang
-              </button>
-              <button className="px-12 py-6 bg-white/20 backdrop-blur-xl text-white font-bold text-xl rounded-full border-2 border-white hover:bg-white/30 transition">
+              </Link>
+              <Link to="https://wa.me/6281217133977" className="px-12 py-6 bg-white/20 backdrop-blur-xl text-white font-bold text-xl rounded-full border-2 border-white hover:bg-white/30 transition">
                 Konsultasi Dulu
-              </button>
+              </Link>
             </motion.div>
           </div>
         </section>
@@ -391,9 +391,9 @@ export default function Home() {
                 <button className="px-10 py-4 bg-white text-blue-700 font-black text-2xl rounded-full shadow-2xl hover:scale-90 transition">
                   Mulai Gratis 7 Hari
                 </button>
-                <button className="px-10 py-3 border-2 border-white text-white font-bold text-2x1 rounded-full hover:bg-white/20 transition flex items-center justify-center gap-3">
+                <Link to="https://wa.me/6281217133977" className="px-10 py-3 border-2 border-white text-white font-bold text-2x1 rounded-full hover:bg-white/20 transition flex items-center justify-center gap-3">
                   <Headphones className="w-8 h-8" /> Chat Mentor Sekarang
-                </button>
+                </Link>
               </div>
             </motion.div>
           </div>

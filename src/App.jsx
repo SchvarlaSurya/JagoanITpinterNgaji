@@ -8,10 +8,10 @@ import Assignment from "./pages/Assignment";
 import Setting from "./pages/Setting";
 
 
-function App() {
-  return (
-    <Router>
-      <Routes>
+  function App() {
+    return (
+      <Router>
+        <Routes>
 
     <Route path="/" element={<Home />} />
     <Route path="/dashboard" element={<Dashboard />} />
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+  export default App;

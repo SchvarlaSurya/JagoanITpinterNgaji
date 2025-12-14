@@ -47,9 +47,9 @@ export default function Home() {
               <Link to='/signin' className="px-6 py-3 text-blue-700 font-bold rounded-full border-2 border-blue-200 hover:bg-blue-50 transition bg-white">
                 Masuk
               </Link>
-              <button className="px-8 py-3 bg-blue-700 text-white font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition flex items-center gap-2">
+              <Link to="/signup" className="px-8 py-3 bg-blue-700 text-white font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition flex items-center gap-2">
                 Get Started <ArrowRight className="w-5 h-5" />
-              </button>
+              </Link>
             </div>
 
             <button onClick={() => setMobileMenu(!mobileMenu)} className="lg:hidden">
@@ -313,10 +313,10 @@ export default function Home() {
                 </h3>
                 <div className="space-y-8 text-left">
                   {[
-                    { emoji: "👂", title: "Kami Mendengar dan Memahami", desc: "Setiap peserta didorong menyampaikan kebutuhan, harapan, dan kendala. Kami hadir bukan hanya sebagai pengajar, tapi juga pendengar yang siap mendampingimu." },
-                    { emoji: "🎯", title: "Program Disesuaikan Kebutuhanmu", desc: "Baik untuk akademik, karier, atau komunikasi sehari-hari — materi disesuaikan 100% dengan mimpi dan targetmu." },
-                    { emoji: "✨", title: "Lingkungan Supportif & Seru", desc: "Tidak ada penghakiman. Hanya motivasi, kolaborasi, dan suasana belajar yang aman secara emosional." },
-                    { emoji: "🥰", title: "Staf dan Pengajar Ramah", desc: "Kamu akan disambut senyum tulus dan energi positif dari hari pertama." }
+                    { emoji: "👂", title: "Kami Mendengar dan Memahami", desc: "Setiap peserta dipersilakan nyampaikan kebutuhan, target skill, dan kesulitannya. Di BetaBet, mentor bukan cuma ngajar—tapi juga dengerin dan bantu kamu nemu cara belajar yang paling pas." },
+                    { emoji: "🎯", title: "Program Disesuaikan Kebutuhanmu", desc: "Mau fokus bikin website, belajar JavaScript, backend, UI/UX, atau fullstack — semua materi bisa disesuaikan 100% sama tujuan dan level kamu." },
+                    { emoji: "✨", title: "Program Supportif & Seru", desc: "Nggak ada nge-judge code kamu berantakan. Yang ada cuma support, diskusi santai, dan tempat belajar yang aman buat eksplorasi." },
+                    { emoji: "🥰", title: "Staf dan Admin Ramah", desc: "Kamu akan disambut senyum tulus dan energi positif dari hari pertama." }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-5">
                       <div className="text-2xl">{item.emoji}</div>
@@ -337,14 +337,14 @@ export default function Home() {
                 className="bg-white/10 backdrop-blur-xl rounded-3xl p-10 lg:p-12 border border-white/20 shadow-2xl"
               >
                 <h3 className="text-4xl lg:text-3 xl font-black text-white mb-8">
-                  Didampingi Tutor Muda, Asik, <span className="text-yellow-300">& Kompeten</span>
+                  Didampingi Kegiatan Unik, <span className="text-yellow-300">& Seru!</span>
                 </h3>
                 <div className="space-y-8 text-left">
                   {[
-                    { emoji: "💬", title: "Pengalaman Mengajar Personal", desc: "Tutor kami adaptif, bisa handle level A1 sampai C1 dengan pendekatan satu-satu yang bikin kamu nyaman." },
-                    { emoji: "📊", title: "Evaluasi & Supervisi Profesional", desc: "Setiap tutor dievaluasi rutin oleh tim akademik senior — kualitas terjaga 100%." },
-                    { emoji: "🤝", title: "Komunikatif di Dalam & Luar Kelas", desc: "Chat, diskusi, mentoring — tutor selalu ada buat kamu, bahkan setelah kelas selesai." },
-                    { emoji: "🎓", title: "Pengajar Tersertifikasi", desc: "Semua tutor punya sertifikasi resmi pengajaran + pengalaman real di lapangan." }
+                    { emoji: "💬", title: "Pengalaman Mengajar Personal", desc: "Program kami adaptif, bisa handle pemula sampai yang udah pernah ngoding. Pendekatan satu-satu bikin kamu makin pede nulis code." },
+                    { emoji: "📊", title: "Evaluasi & Supervisi Profesional", desc: "Setiap Program dievaluasi rutin oleh tim senior engineer — supaya kualitas pembelajaran selalu konsisten dan up-to-date dengan standar industri." },
+                    { emoji: "🤝", title: "Komunikatif di Dalam & Luar Kelas", desc: "Diskusi, debugging bareng, tanya-tanya syntax — mentor selalu ready bantu, bahkan setelah sesi belajar selesai." },
+                    { emoji: "🎓", title: "Praktisi Berpengalaman", desc: "Semua tutor punya sertifikasi resmi pengajaran + pengalaman real di lapangan.Dipandu oleh praktisi yang punya sertifikasi resmi dan pengalaman langsung mengembangkan website serta aplikasi di dunia nyata." }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-5">
                       <div className="text-2xl">{item.emoji}</div>
